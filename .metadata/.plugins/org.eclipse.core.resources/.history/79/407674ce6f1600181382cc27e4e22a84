@@ -17,7 +17,7 @@ public class ArraysAndStrings {
 				//isUnique(input);
 		// Problem 1.2
 			String str1 = "foo";
-			String str2 = "oof";
+			String str2 = "barr";
 				checkPermutation(str1, str2);
 	}
 	
@@ -48,7 +48,7 @@ public class ArraysAndStrings {
 	
 	public static boolean checkPermutation(String str1, String str2) { 
 		if (str1.length() != str2.length()) {
-			System.out.println("Different string lengths cannot be permutations of each other.");
+			System.out.println("Different string lengths cannot have permutations.");
 			return false;
 		}
 		

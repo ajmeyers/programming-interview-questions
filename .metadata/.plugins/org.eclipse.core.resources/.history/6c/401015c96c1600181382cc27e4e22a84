@@ -1,5 +1,3 @@
-import java.util.*;
-
 /*
  * Cracking the Coding Interview - 6th Edition
  * 
@@ -13,12 +11,12 @@ public class ArraysAndStrings {
 	
 	public static void main(String[] args) {
 		// Problem 1.1
-			//String input = "Andrew";
-				//isUnique(input);
+		String input = "Andrew";
+			isUnique(input);
 		// Problem 1.2
-			String str1 = "foo";
-			String str2 = "oof";
-				checkPermutation(str1, str2);
+		//String str1 = "foo";
+		//String str2 = "bar";
+			//checkPermutation(str1, str2);
 	}
 	
 	
@@ -27,6 +25,7 @@ public class ArraysAndStrings {
 	 * What if you cannot use additional data structures?
 	 */
 	
+	// Brute force method
 	public static boolean isUnique(String str) {
 		if (str.length() > 128) return false; // Assuming Character Set is ASCII
 		
@@ -46,29 +45,10 @@ public class ArraysAndStrings {
 	 * Given two Strings, write a method to decide if one is a permutation of the other
 	 */
 	
-	public static boolean checkPermutation(String str1, String str2) { 
-		if (str1.length() != str2.length()) {
-			System.out.println("Different string lengths cannot be permutations of each other.");
-			return false;
-		}
+	public static boolean checkPermutation(String str1, String str2) {
 		
-		// Converting both strings to char arrays
-		char[] arr1 = str1.toCharArray();
-		char[] arr2 = str2.toCharArray();
-		// Sorting both new char arrays
-		Arrays.sort(arr1);
-		Arrays.sort(arr2);
-		// Converting char arrays back into strings
-		String str_1 = String.valueOf(arr1);
-		String str_2 = String.valueOf(arr2);
 		
-		if (str_1.equals(str_2)) {
-			System.out.println("String " + str1 + " is a permutation of " + str2 + ".");
-			return true;
-		}
-		
-		System.out.println("String " + str1 + " is not a permutation of " + str2 + ".");
-		return false;
+		return true;
 	}	
 }
 

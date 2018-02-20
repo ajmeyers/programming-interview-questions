@@ -17,7 +17,7 @@ public class ArraysAndStrings {
 				//isUnique(input);
 		// Problem 1.2
 			String str1 = "foo";
-			String str2 = "oof";
+			String str2 = "barr";
 				checkPermutation(str1, str2);
 	}
 	
