@@ -1,0 +1,38 @@
+/*
+ * Cracking the Coding Interview - 6th Edition
+ * 
+ * Chapter 1 
+ * 
+ * Arrays and Strings 
+ * 
+ */
+
+public class ArraysAndStrings {
+	
+	public static void main(String[] args) {
+		
+		
+		
+	}
+	
+	
+   /* Problem 1.1 - Is Unique
+	* Implement an Algorithm to determine if a string has all unique characters.
+	* What if you cannot use additional data structures?
+	*/
+	
+	public static boolean isUnique(String str) {
+		for (int i = 0; i < str.length(); i++) {
+			for (int j = i+1; j < str.length(); j++) {
+				if (str.charAt(i) == str.charAt(j)) {
+					System.out.println("The string " + str + " is not unique");
+					return false;
+				}
+			}
+		}
+		System.out.println("The string " + str + " is unique");
+		return true;
+	}
+}
+
+

@@ -10,13 +10,10 @@
 public class ArraysAndStrings {
 	
 	public static void main(String[] args) {
-		// Problem 1.1
-		String input = "Andrew";
-			isUnique(input);
-		// Problem 1.2
-		//String str1 = "foo";
-		//String str2 = "bar";
-			//checkPermutation(str1, str2);
+		
+		String input = "apple pie";
+		isUnique(input);
+		
 	}
 	
 	
@@ -27,8 +24,6 @@ public class ArraysAndStrings {
 	
 	// Brute force method
 	public static boolean isUnique(String str) {
-		if (str.length() > 128) return false; // Assuming Character Set is ASCII
-		
 		for (int i = 0; i < str.length(); i++) {
 			for (int j = i+1; j < str.length(); j++) {
 				if (str.charAt(i) == str.charAt(j)) {
@@ -37,19 +32,9 @@ public class ArraysAndStrings {
 				}
 			}
 		}
-		System.out.println("The string " + str + "\n" + "is unique.");
+		System.out.println("The string '" + str + "' is unique.");
 		return true;
 	}
-	
-	/* Problem 1.2 - Check Permutation
-	 * Given two Strings, write a method to decide if one is a permutation of the other
-	 */
-	
-	public static boolean checkPermutation(String str1, String str2) {
-		
-		
-		return true;
-	}	
 }
 
 

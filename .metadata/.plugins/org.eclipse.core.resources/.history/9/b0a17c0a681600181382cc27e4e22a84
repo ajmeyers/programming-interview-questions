@@ -1,0 +1,32 @@
+/*
+ * Cracking the Coding Interview - 6th Edition
+ * 
+ * Chapter 1 
+ * 
+ * Arrays and Strings 
+ * 
+ */
+
+public class ArraysAndStrings {
+	
+	public static void main(String[] args) {
+		
+		
+		
+	}
+	
+	/*
+	 *  Problem 1.1 - Is Unique
+	 *  Implement an Algorithm to determine if a string has all unique characters.
+	 *  What if you cannot use additional data structures?
+	 */
+	
+	public static boolean isUnique(String str) {
+		
+		
+		
+		return false;
+	}
+}
+
+

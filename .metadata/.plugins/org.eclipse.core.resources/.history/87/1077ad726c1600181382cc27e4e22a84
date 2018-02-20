@@ -12,11 +12,9 @@ public class ArraysAndStrings {
 	public static void main(String[] args) {
 		// Problem 1.1
 		String input = "Andrew";
-			isUnique(input);
+		isUnique(input);
 		// Problem 1.2
-		//String str1 = "foo";
-		//String str2 = "bar";
-			//checkPermutation(str1, str2);
+		
 	}
 	
 	
@@ -42,14 +40,10 @@ public class ArraysAndStrings {
 	}
 	
 	/* Problem 1.2 - Check Permutation
-	 * Given two Strings, write a method to decide if one is a permutation of the other
+	 * Given Two Strings 
 	 */
 	
-	public static boolean checkPermutation(String str1, String str2) {
-		
-		
-		return true;
-	}	
+	
 }
 
 

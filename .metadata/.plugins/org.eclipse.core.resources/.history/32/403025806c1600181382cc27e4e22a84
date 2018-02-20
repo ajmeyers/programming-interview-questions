@@ -12,11 +12,10 @@ public class ArraysAndStrings {
 	public static void main(String[] args) {
 		// Problem 1.1
 		String input = "Andrew";
-			isUnique(input);
+		isUnique(input);
 		// Problem 1.2
-		//String str1 = "foo";
-		//String str2 = "bar";
-			//checkPermutation(str1, str2);
+		String str1 = "foo";
+		String str2 = "bar";
 	}
 	
 	
