@@ -18,7 +18,7 @@ public class ArraysAndStrings {
 	
 	public static void main(String[] args) {
 		// Problem 1.1
-			String input = "dabcd";
+			String input = "Andrew";
 				isUnique(input);
 		// Problem 1.2
 			String str1 = "tacocat";
@@ -58,13 +58,12 @@ public class ArraysAndStrings {
 		if (str.length() > 128) return false; // Assuming Character Set is ASCII
 		boolean[] char_set = new boolean[128];
 		for (int i = 0; i < str.length(); i++) {
-			int index = str.charAt(i); 
-			//System.out.println(index);
-			if (char_set[index]) {	// Char has already been found in the string
+			int val = str.charAt(i); 
+			if (char_set[val]) {	// Char has already been found in the string
 				System.out.println("The string " + str + " is not unique." + "\n");
 				return false;
 			}
-			char_set[index] = true;
+			char_set[val] = true;
 		}
 		System.out.println("The string " + str + "\n" + "is unique." + "\n");
 		return true;
