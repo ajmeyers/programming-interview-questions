@@ -18,7 +18,7 @@ public class ArraysAndStrings {
 	
 	public static void main(String[] args) {
 		// Problem 1.1
-			String input = "Andrew";
+			String input = "ss";
 				isUnique(input);
 		// Problem 1.2
 			String str1 = "tacocat";
@@ -60,7 +60,7 @@ public class ArraysAndStrings {
 		for (int i = 0; i < str.length(); i++) {
 			int val = str.charAt(i); 
 			if (char_set[val]) {	// Char has already been found in the string
-				System.out.println("The string " + str + " is not unique." + "\n");
+				System.out.println("The string " + str + " is not unique.");
 				return false;
 			}
 			char_set[val] = true;

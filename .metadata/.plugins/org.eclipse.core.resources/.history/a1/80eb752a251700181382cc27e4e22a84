@@ -18,7 +18,7 @@ public class ArraysAndStrings {
 	
 	public static void main(String[] args) {
 		// Problem 1.1
-			String input = "Andrew";
+			String input = "1$1";
 				isUnique(input);
 		// Problem 1.2
 			String str1 = "tacocat";

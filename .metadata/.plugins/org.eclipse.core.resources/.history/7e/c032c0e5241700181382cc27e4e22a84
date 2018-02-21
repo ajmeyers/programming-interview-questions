@@ -11,11 +11,6 @@ import java.util.*;
 
 public class ArraysAndStrings {
 	
-	/*
-	 * Chapter 1 - Arrays and Strings 
-	 * Driver
-	 */
-	
 	public static void main(String[] args) {
 		// Problem 1.1
 			String input = "Andrew";
@@ -37,7 +32,6 @@ public class ArraysAndStrings {
 		System.out.println("------------------------");
 		
 		// O(n^2) Solution
-		
 		/*
 		if (str.length() > 128) return false; // Assuming Character Set is ASCII
 		
@@ -60,7 +54,7 @@ public class ArraysAndStrings {
 		for (int i = 0; i < str.length(); i++) {
 			int val = str.charAt(i); 
 			if (char_set[val]) {	// Char has already been found in the string
-				System.out.println("The string " + str + " is not unique." + "\n");
+				System.out.println("The string " + str + " is not unique.");
 				return false;
 			}
 			char_set[val] = true;
@@ -98,11 +92,7 @@ public class ArraysAndStrings {
 		}
 		System.out.println("String " + str1 + " is not a permutation of " + str2 + "." + "\n");
 		return false;
-	}
-	
-	/* Problem 1.3
-	 * 
-	 */
+	}	
 }
 
 

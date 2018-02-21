@@ -37,7 +37,6 @@ public class ArraysAndStrings {
 		System.out.println("------------------------");
 		
 		// O(n^2) Solution
-		
 		/*
 		if (str.length() > 128) return false; // Assuming Character Set is ASCII
 		
@@ -60,7 +59,7 @@ public class ArraysAndStrings {
 		for (int i = 0; i < str.length(); i++) {
 			int val = str.charAt(i); 
 			if (char_set[val]) {	// Char has already been found in the string
-				System.out.println("The string " + str + " is not unique." + "\n");
+				System.out.println("The string " + str + " is not unique.");
 				return false;
 			}
 			char_set[val] = true;

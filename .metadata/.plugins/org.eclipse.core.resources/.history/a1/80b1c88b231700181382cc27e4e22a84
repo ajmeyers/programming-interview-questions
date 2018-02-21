@@ -11,18 +11,13 @@ import java.util.*;
 
 public class ArraysAndStrings {
 	
-	/*
-	 * Chapter 1 - Arrays and Strings 
-	 * Driver
-	 */
-	
 	public static void main(String[] args) {
 		// Problem 1.1
-			String input = "Andrew";
-				isUnique(input);
+			//String input = "Andrew";
+				//isUnique(input);
 		// Problem 1.2
-			String str1 = "tacocat";
-			String str2 = "ccoaatt";
+			String str1 = "foo";
+			String str2 = "oof";
 				checkPermutation(str1, str2);
 	}
 	
@@ -33,12 +28,6 @@ public class ArraysAndStrings {
 	 */
 	
 	public static boolean isUnique(String str) {
-		System.out.println("Problem 1.1");
-		System.out.println("------------------------");
-		
-		// O(n^2) Solution
-		
-		/*
 		if (str.length() > 128) return false; // Assuming Character Set is ASCII
 		
 		for (int i = 0; i < str.length(); i++) {
@@ -51,22 +40,6 @@ public class ArraysAndStrings {
 		}
 		System.out.println("The string " + str + "\n" + "is unique.");
 		return true;
-		*/
-		
-		// O(n) Solution
-		
-		if (str.length() > 128) return false; // Assuming Character Set is ASCII
-		boolean[] char_set = new boolean[128];
-		for (int i = 0; i < str.length(); i++) {
-			int val = str.charAt(i); 
-			if (char_set[val]) {	// Char has already been found in the string
-				System.out.println("The string " + str + " is not unique." + "\n");
-				return false;
-			}
-			char_set[val] = true;
-		}
-		System.out.println("The string " + str + "\n" + "is unique." + "\n");
-		return true;
 	}
 	
 	/* Problem 1.2 - Check Permutation
@@ -74,11 +47,8 @@ public class ArraysAndStrings {
 	 */
 	
 	public static boolean checkPermutation(String str1, String str2) { 
-		System.out.println("Problem 1.2");
-		System.out.println("------------------------");
-		
 		if (str1.length() != str2.length()) {
-			System.out.println("Different string lengths cannot be permutations of each other." + "\n");
+			System.out.println("Different string lengths cannot be permutations of each other.");
 			return false;
 		}
 		
@@ -93,16 +63,13 @@ public class ArraysAndStrings {
 		String str_2 = String.valueOf(arr2);
 		
 		if (str_1.equals(str_2)) {
-			System.out.println("String " + str1 + " is a permutation of " + str2 + "." + "\n");
+			System.out.println("String " + str1 + " is a permutation of " + str2 + ".");
 			return true;
 		}
-		System.out.println("String " + str1 + " is not a permutation of " + str2 + "." + "\n");
+		
+		System.out.println("String " + str1 + " is not a permutation of " + str2 + ".");
 		return false;
-	}
-	
-	/* Problem 1.3
-	 * 
-	 */
+	}	
 }
 
 
